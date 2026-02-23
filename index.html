@@ -2,59 +2,157 @@
 <html>
 <head>
   <title>Imran Tamboli | DevOps Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      padding: 0;
-      background-color: #0f172a;
-      color: white;
-      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
     }
 
-    header {
-      padding: 50px;
-      background-color: #1e293b;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 60px;
+      background-color: #161b22;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #c9d1d9;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    .hero {
+      padding: 120px 60px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+      color: white;
+    }
+
+    .hero p {
+      font-size: 24px;
+      color: #8b949e;
     }
 
     section {
-      padding: 40px;
+      padding: 80px 60px;
     }
 
-    h1 {
-      color: #38bdf8;
+    h2 {
+      font-size: 32px;
+      color: white;
+      margin-bottom: 30px;
     }
 
-    .btn {
-      padding: 10px 20px;
-      background-color: #38bdf8;
-      color: black;
+    .skills span {
+      background-color: #21262d;
+      padding: 8px 15px;
+      border-radius: 20px;
+      margin: 5px;
+      display: inline-block;
+    }
+
+    .projects {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background-color: #21262d;
+    }
+
+    .card h3 {
+      color: white;
+    }
+
+    .contact a {
+      color: #58a6ff;
       text-decoration: none;
-      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #161b22;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Hi, I'm Imran Tamboli</h1>
-  <p>Aspiring AWS & DevOps Engineer</p>
-</header>
+<nav>
+  <div><strong>Imran.</strong></div>
+  <div>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-<section>
+<div class="hero">
+  <h1>Imran Tamboli.</h1>
+  <p>Cloud & DevOps Engineer | AWS | Docker | Kubernetes</p>
+</div>
+
+<section id="skills">
   <h2>Skills</h2>
-  <p>AWS | Docker | Kubernetes | Linux | Git | Terraform</p>
+  <div class="skills">
+    <span>AWS</span>
+    <span>Docker</span>
+    <span>Kubernetes</span>
+    <span>Linux</span>
+    <span>Git</span>
+    <span>Terraform</span>
+  </div>
 </section>
 
-<section>
+<section id="projects">
   <h2>Projects</h2>
-  <p>AWS Invoice Scanner (S3 + Lambda + Textract)</p>
-  <p>Dockerized Weather Dashboard</p>
+  <div class="projects">
+    <div class="card">
+      <h3>AWS Invoice Scanner</h3>
+      <p>Serverless project using S3, Lambda & Textract.</p>
+    </div>
+
+    <div class="card">
+      <h3>Dockerized Weather Dashboard</h3>
+      <p>Containerized web app deployed using Docker.</p>
+    </div>
+  </div>
 </section>
 
-  
-<section>
+<section id="contact" class="contact">
   <h2>Contact</h2>
   <p>Email: <a href="mailto:imrantamboli7008@gmail.com">imrantamboli7008@gmail.com</a></p>
 </section>
+
+<footer>
+  © 2026 Imran Tamboli | Built with HTML & CSS | Hosted on GitHub Pages
+</footer>
+
+</body>
+</html>
